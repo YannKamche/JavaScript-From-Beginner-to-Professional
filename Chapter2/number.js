@@ -22,6 +22,7 @@ console.log(bool2);// either true or false
 
 let unassigned; //Undefined since it does not have any value
 console.log(unassigned);
+console.log("unassigned", typeof unassigned);
 
 let terribleThingToDo = undefined;
-console.log(terribleThingToDo);
+

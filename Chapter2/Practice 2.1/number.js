@@ -3,6 +3,7 @@ let decNr = 1.5 // decimal numberr
 let expNr = 1.4e15; // exponential number
 let octNr = 0o10; // octal number. decimal version will be 8
 
+console.log(expNr);
 let hexNr = 0xFFFF //hexadecimal number (65535)
 console.log(hexNr);
 let binNr = 0b101;
@@ -26,3 +27,5 @@ console.log("unassigned", typeof unassigned);
 
 let terribleThingToDo = undefined;
 
+let binNr2 = 0b1000;
+console.log(binNr2);

@@ -5,7 +5,7 @@ let myStr = "string";
 
 console.log(myNr - myStr);
 
-//Esponentiation
+//Exponentiation
 // We use ** to perform exponentiation in Javascript
 let base = 2;
 let power = 3

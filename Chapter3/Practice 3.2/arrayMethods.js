@@ -75,8 +75,35 @@ console.log(ages.sort());
  */
 //reverse(): reverses any array irrespective of it sorted or not
 let listOfCountries = ["Cameroon", "Ghana", "Nigeria", "South Africa"];
-console.log(listOfCountries.find(e => e === "Cameroon"));
+
+if(listOfCountries.find(e => e === "Cameroon") === "Cameroon") {
+    console.log("found Cameroon");
+}
 console.log(listOfCountries.reverse());
 
+//small revision 
+/**
+ The different built-in methods I have learnt so far are:
+ - push(): Adds an element at the end of array and returns the new size of the array
+ - pop(): Removes the element at the last index and returs that element
+ - shift(): Removes the first element of the array and performs a shift left operations
+ - unshift(): Adds an element at the first index of the array and returns the size of the new array
+ - splice() : Add or remove an element at a specific position that can be define by its parameters
+ - concat() : Concatenates values to an object
+ - length : Returns the size of the array or object
+ - find() : Find an element in an array and returns its index
+ - sort() : Sorts an array in ascending order (number), from small to high strings (A-Z)
+ - indexOf(): Returns the index of an element specified
+ - lastIndexOf(): Returns the index of the last occurence of an element
+ - reverse() : Reverses an array
+ - delete operator: Helps delete a specified element in array without affecting the size of the array
+ */
 
+let mArray = [28, 100, 67, 75, "lemon"];
+let valueShifted = mArray.shift();
+console.log(valueShifted, mArray.length, mArray);
 
+let find38 = mArray.find(e => e === "lemon");
+console.log(find38);
+
+console.log(mArray.reverse());

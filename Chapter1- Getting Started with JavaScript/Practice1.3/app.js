@@ -1,0 +1,1 @@
+alert("This alert is from a different file");

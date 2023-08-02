@@ -1,9 +1,9 @@
-//Functions: It is a named block of code 
-function sayHello() { //function to greet any user
-    let you = prompt("What's your name? ");
-    console.log(`Hello ${you}`);
-}
-sayHello();
+// //Functions: It is a named block of code 
+// function sayHello() { //function to greet any user
+//     let you = prompt("What's your name? ");
+//     console.log(`Hello ${you}`);
+// }
+// sayHello();
 
 /*It is importat to note that the same way funcions
 can contain variables, likewise variables can contain functions
@@ -36,3 +36,28 @@ function miniCalculator(num1, num2, calc) {
     }
 }
 console.log(miniCalculator(2, 6, "+"));
+
+//Default parameters
+function moduloNumber (i = 3) {
+    console.log(i % 2);
+}
+moduloNumber(); //Since no argument is passed, defautl argument = 3
+
+/*Arrow functions
+They are special way to send functions as parameters 
+Format: 
+        1) (param1, param2) => body of the function;
+        2) () => body of the function;
+        3) param => body of the function;
+        4) (param1, param2) => {
+
+        };
+*/
+
+let sayHello = () => console.log("Hello World");
+sayHello();
+let plusTwo = num => console.log(num + 2);
+plusTwo(2);
+let addNumbers = (x, y) => console.log(x + y);
+addNumbers(2, 5);
+

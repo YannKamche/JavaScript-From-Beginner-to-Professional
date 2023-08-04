@@ -42,3 +42,43 @@ console.log(subtractTwoNumbers(...numbersToSubtract));
 (() => {
     console.log("An IIFE function written in arrow notation");
 }) ();
+
+/* RECURSIVE FUNCTION
+They are employed when you need to a call a function over and over*/
+
+let factoriaNum = num => {
+    if(num === 0) return 1;
+    return num * factoriaNum(--num);
+}
+console.log(factoriaNum(0));
+
+/*Anonymous function
+These are functions with no names and can be invoked by using the variable name*/
+let functionVariable = function () {
+    console.log("not secret");
+};
+functionVariable();
+
+//Function to count upto 10
+let countUpToTen = count => {
+    console.log(count++);
+    if(count <= 10)
+        countUpToTen(count);
+};
+countUpToTen(0);
+
+/*Function Callbacks*/
+let functionCallBack = (x) => { //Takes a function variable as parameter
+    x();    
+    console.log("I take a variable function as paramenter");
+};
+let argumentFunction = () => console.log("I am passed as argumemnt");
+functionCallBack(argumentFunction);
+
+let youGotThis = () => console.log("You are really well, keep coding!");
+setTimeout(youGotThis, 2000) // Waits for 2000ms before executing the function
+setInterval(youGotThis, 2000); //Repeatedly executes the function till you kill the program
+
+
+
+

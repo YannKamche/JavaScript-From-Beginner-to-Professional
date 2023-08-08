@@ -8,8 +8,7 @@ class Dog { //Dog class
         this.weight = weight;
         this.color = color;
         this.breed = breed;
-        /**
-         The paramater of the constructor and the properties of the class have the same name*/
+        /**The paramater of the constructor and the properties of the class have the same name*/
     }
 };
 let dog = new Dog("JavaScript", 2.4, "brown", "Chichuaua");
@@ -35,7 +34,7 @@ class Animal {
     }
 }
 class myPerson {
-    constructor (name, hairstyle = 'unkwnon') {
+    constructor (name, hairstyle = "Not specified" ) {
         this.name = name;
     }
     complimentSomeone(name, hairstyle) {
@@ -44,4 +43,6 @@ class myPerson {
 }
 let p1 = new myPerson("John");
 let p2 = new myPerson("Mary");
-p1.complimentSomeone(p2.name), p2.hairstyle;//John compliments Mary
+p1.complimentSomeone(p2.name, p2.hairstyle);//John compliments Mary
+
+

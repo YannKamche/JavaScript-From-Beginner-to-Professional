@@ -43,6 +43,7 @@ class myPerson {
 }
 let p1 = new myPerson("John");
 let p2 = new myPerson("Mary");
-p1.complimentSomeone(p2.name, p2.hairstyle);//John compliments Mary
+p1.complimentSomeone(p2.name, p2.hairstyle);//John compliments Mary;
+
 
 
